@@ -1,0 +1,59 @@
+/* AI Recipe Assistant Styles */
+.ai-glass-card {
+    background: var(--card-bg) !important;
+    border: 1px solid var(--border-color) !important;
+    border-radius: 15px;
+    padding: 25px;
+    margin-top: 30px;
+    transition: 0.3s;
+    min-height: fit-content;
+}
+
+.ai-glass-card:hover {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 20px rgba(88, 166, 255, 0.1);
+}
+
+.ai-preview-wrapper {
+    width: 100%;
+    height: 250px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    border: 1px solid var(--border-color);
+    position: relative;
+    overflow: hidden;
+}
+
+.ai-preview-wrapper img {
+    max-height: 100%;
+    width: auto;
+    border-radius: 8px;
+    border: 1px solid var(--primary-color);
+}
+
+.ai-output-content {
+    margin-top: 20px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    border-left: 4px solid var(--primary-color);
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.7;
+    color: var(--text-primary);
+    word-wrap: break-word;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.pulse {
+    animation: pulse-animation 1.5s infinite;
+}
+
+@keyframes pulse-animation {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
